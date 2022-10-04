@@ -1,0 +1,12 @@
+body {
+     background-color: rgb(215, 241, 232);
+     font-family: 'Poppins', sans-serif;
+}
+.h2 {
+     color: rgb(0, 0, 0);
+     font-family: 'Kanit', sans-serif;
+}
+.submit {
+     background-color: rgb(144, 224, 197);
+     border-radius: 100%;
+}
