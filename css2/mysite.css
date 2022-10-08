@@ -50,11 +50,10 @@ body {
      font-family: 'Roboto Mono', monospace;
 }
 .welcome {
-     text-align: justify;
-     margin-left: 25%;
-     font-size: 20px;
+     font-size: 18px;
      font-family: 'Arvo', serif;
      margin-right: 2%;
+     text-align: justify;
 }
 .pfp-img {
      border-radius: 100%;
