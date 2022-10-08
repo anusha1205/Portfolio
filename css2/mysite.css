@@ -64,7 +64,7 @@ body {
      font-size: 30px;
      font-family: 'Montserrat', sans-serif; 
 }
-.subway-img {
+.pfp-img {
      border-radius: 100%;
      width: 10%;
      float: left;
@@ -77,8 +77,6 @@ body {
      width: 30%;
      margin-top: 240px;
 }
-
-
 /*SKILL THINGS*/
 .comp-img {
      width: 10%;
