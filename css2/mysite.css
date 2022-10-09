@@ -18,6 +18,7 @@ body {
      margin-left: 70%;
      margin-top: 50px;
      position: relative;
+
 }
 .webdesign {
      color: rgb(9, 76, 54);
@@ -35,6 +36,8 @@ body {
      border-width: 9px;
      width: 20%;
 }
+
+
 /*HELLO*/
 .profile {
      text-align: center;
@@ -47,14 +50,13 @@ body {
      font-family: 'Roboto Mono', monospace;
 }
 .welcome {
-     font-size: 18px;
+     font-size: 15px;
      font-family: 'Arvo', serif;
-     margin-right: 2%;
-     text-align: justify;
+     margin-right: 20%;
 }
 .pfp-img {
      border-radius: 100%;
-     width: 15%;
+     width: 10%;
      float: left;
      margin-left: 10%;
 }
@@ -67,7 +69,7 @@ body {
 }
 /*SKILL THINGS*/
 .comp-img {
-     width: 15%;
+     width: 10%;
      float: right;
      margin-right: 10%;
 }
@@ -86,14 +88,15 @@ body {
 .deets {
      font-size: 15px;
      font-family: 'Arvo', serif;
-     margin-left: 2%;
+     margin-left: 20%;
 }
+
 .aftskill {
      color: rgb(61, 142, 114);
      border-style: dotted none none;
      border-width: 9px;
      width: 40%;
-     margin-top: 230px;
+     margin-top: 300px;
 }
 
 
@@ -129,7 +132,7 @@ body {
    }
 
 
-.link-me {
+.touch-with-me {
      font-size: 30px;
 }
 .contactme {
