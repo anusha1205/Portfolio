@@ -1,12 +1,27 @@
 body {
      background-color: rgb(215, 241, 232);
      font-family: 'Poppins', sans-serif;
+     text-align: center;
 }
-.h2 {
+.my-details {
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     font-size: 20px;
+}
+.h2-mycontact {
      color: rgb(0, 0, 0);
      font-family: 'Kanit', sans-serif;
+}
+.aft-details {
+     border-style: dotted none none;
+     border-width: 5px;
+     width: 30%;
+}
+.labelmycontact {
+     font-size: 13px;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .submit {
      background-color: rgb(144, 224, 197);
      border-radius: 100%;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
