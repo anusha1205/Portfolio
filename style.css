@@ -1,3 +1,5 @@
+
+
 /* navbar */
 .navbar {
       padding: 5%;
@@ -31,7 +33,6 @@
       border-right: solid black;
       border-width: 0.2rem;     
 }
-
 
 
 /* about me div */
@@ -106,12 +107,11 @@
 
 
 
-
-
 /* contact me div things */
 #contact-div{
       background-color: rgb(197, 197, 197);
       margin-top: 5%;
+      margin-bottom: 150px;
       height: 250px;
       display:  flex;
       justify-content: space-evenly;
@@ -146,8 +146,6 @@
 }
 
 
-
-
 @media screen and (max-width: 988px) {
       .profile-pic{
             width: 400px;
@@ -168,5 +166,8 @@
       .button-tag-main-div{
             flex-direction: column;
       }
-
+      .navbar-nav{
+            display: flex;
+            flex-wrap: wrap;
+      }
 }
