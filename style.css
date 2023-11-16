@@ -1,0 +1,101 @@
+
+
+/* navbar */
+.navbar {
+      padding: 5%;
+      justify-content: space-between;
+}
+.navbar-brand-div{
+      display: flex;
+      align-items: center;
+      gap: 9%;
+      
+}
+.brand-logo{
+      text-decoration: none;
+      display: flex;
+      border-radius: 100%;
+      background-color: rgb(151, 151, 151);
+      align-items: center;
+      color: rgb(4, 4, 41);
+}
+.brand-logo:hover{
+      color: rgb(99, 99, 119);
+}
+.navbar-brand{
+      color: rgb(4, 4, 41);
+      text-decoration: none;
+}
+.navbar-brand:hover{
+      color: grey;
+}
+.nav-item{
+      color: rgb(4, 4, 41);
+}
+
+
+
+
+/* about me div */
+.profile-pic{
+      width: 100%;
+      border-radius: 100%;
+}
+.about-div-1{
+      margin-top: 3%;
+      text-align: center;
+}
+.about-div-2{
+      padding: 3%;
+      margin-top: 2%;
+      display: flex;
+      justify-content: space-around;
+      gap: 5%;
+}
+.about-div-2-2{
+      padding: 3%;
+}
+
+
+
+
+
+
+
+
+/* contact me div things */
+#contact-div{
+      background-color: rgb(197, 197, 197);
+      margin-top: 5%;
+      height: 250px;
+      display:  flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-direction: row;
+      gap: 4rem;
+}
+.visiting{
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+}
+.email-icon {
+      height: 40px;
+}
+.email-icon:hover{
+      transition: 0.2s;
+      height: 50px;
+}
+.github-icon, .linkedin-icon{
+      height: 40px;
+      align-self: center;
+}
+.github-icon:hover , .linkedin-icon:hover{
+      transition: 0.25s;
+      height: 51px;
+}
+.contact-me-icons{
+      display: flex;
+      justify-content: space-evenly;
+      gap: 15%;
+}

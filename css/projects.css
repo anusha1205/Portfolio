@@ -1,0 +1,19 @@
+
+/* placeholders for PROJECTS */
+#projects{
+        display: flex;
+        /* flex-direction: row; */
+        padding: 1.5%;
+  }
+  .card{
+        margin: 2%;
+        align-items: center;
+        padding: 1.4%;
+        width: 30%;
+  }
+  .btn-dark:hover{
+        background-color: white;
+  }
+  
+  
+  
