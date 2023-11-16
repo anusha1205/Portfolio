@@ -8,14 +8,14 @@
 .navbar-brand-div{
       display: flex;
       align-items: center;
-      gap: 9%;
+      gap: 5%;
       
 }
 .brand-logo{
       text-decoration: none;
       display: flex;
-      border-radius: 100%;
-      background-color: rgb(151, 151, 151);
+      /* border-radius: 100%;
+      background-color: rgb(151, 151, 151); */
       align-items: center;
       color: rgb(4, 4, 41);
 }
@@ -30,10 +30,9 @@
       color: grey;
 }
 .nav-item{
-      color: rgb(4, 4, 41);
+      border-right: solid black;
+      border-width: 0.1rem;
 }
-
-
 
 
 /* about me div */
