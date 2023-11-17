@@ -1,4 +1,9 @@
 /* placeholders for PROJECTS */
+.project{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+}
 #projects {
       display: flex;
       /* flex-direction: row; */
@@ -29,7 +34,7 @@
       flex-direction: column;
       margin-left: 10%;
       margin-right: 10%;
-      margin-top: 2%;
+      margin-top: 5%;
       border: solid black;
       border-width: 0.4px;
       border-radius: 20px;
