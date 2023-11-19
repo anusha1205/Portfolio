@@ -1,11 +1,11 @@
-
-
-
-
 .resume{
       font-family: 'Montserrat', sans-serif;
+      margin: 1%;
       padding: 1%;
+      margin-top: 3%;
       display: flex;
+      border: solid black;
+      border-width: 2px;
       /* align-items: center; */
       /* gap: 5%; */
 }
@@ -28,13 +28,12 @@
 .resume-2-1{
       margin: 2%;
 }
-
-
-
-
-
-
-
+h5{
+      font-size: 1.3rem;
+}
+li{
+      font-size: 20px;
+}
 
 
 
