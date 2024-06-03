@@ -1,0 +1,181 @@
+/* navbar */
+.navbar {
+      padding: 2%;
+}
+.navbar-brand-div{
+      display: flex;
+      align-items: center;
+      gap: 5%;
+      
+}
+.brand-logo{
+      text-decoration: none;
+      display: flex;
+      /* border-radius: 100%;
+      background-color: rgb(151, 151, 151); */
+      align-items: center;
+      color: rgb(43, 43, 110);
+}
+.brand-logo:hover{
+      color: rgb(99, 99, 119);
+}
+.navbar-brand{
+      color: rgb(4, 4, 41);
+      text-decoration: none;
+}
+.navbar-brand:hover{
+      color: grey;
+}
+.nav-item{
+      border-right: solid black;
+      border-width: 0.2rem;     
+}
+
+
+
+
+
+/* about me div */
+.profile-pic{
+      width: 100%;
+      border-radius: 100%;
+}
+.about-div-1{
+      margin-top: 3%;
+      text-align: center;
+}
+@keyframes fadeIn {
+      0% {opacity: 0;}
+      100% {opacity: 1;}
+}
+.about-div-2{
+      padding: 2%;
+      margin-top: 1%;
+      display: flex;
+      justify-content: space-around;
+      gap: 5%;
+      animation: fadeIn 3s;
+}
+.about-div-2-2{
+      padding: 2%;
+}
+.button-tag-main-div{
+      display: flex;
+      margin-top: 8%;
+      gap: 2%;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      /* width: fit-content; */
+}
+.resume-button, .experience-button, .contact-button, .projects-button{
+      height: 100px;
+      width: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      flex-direction: row;
+      border-radius: 100%;
+      border: solid black;
+      border-width: 0.4px;
+}
+
+.resume-button{
+      background-color: #CDF5FD;
+}
+.projects-button{
+      background-color: #A0E9FF;
+}
+.experience-button{
+      background-color: #89CFF3;
+}
+.contact-button{
+      background-color: #00A9FF;
+}
+.resume-button:hover, .projects-button:hover, .experience-button:hover, .contact-button:hover{
+      background-color: white;
+      transition: 0.4s;
+}
+.tags{
+      text-decoration: none;
+      text-align: center;
+      color: black;
+      
+}
+.tags:hover{
+      color: black;
+}
+
+
+
+
+
+
+
+/* contact me div things */
+#contact-div{
+      background-color: rgb(197, 197, 197);
+      margin-top: 5%;
+      margin-bottom: 150px;
+      height: 250px;
+      display:  flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-direction: row;
+      gap: 4rem;
+}
+.visiting{
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+}
+.email-icon {
+      height: 40px;
+}
+.email-icon:hover{
+      transition: 0.2s;
+      height: 50px;
+}
+.github-icon, .linkedin-icon{
+      height: 40px;
+      align-self: center;
+}
+.github-icon:hover , .linkedin-icon:hover{
+      transition: 0.25s;
+      height: 51px;
+}
+.contact-me-icons{
+      display: flex;
+      justify-content: space-evenly;
+      gap: 15%;
+}
+@media screen and (max-width: 988px) {
+      .profile-pic{
+            width: 400px;
+      }
+      .about-div-2{
+            display: flex;
+            flex-direction: column;
+      }
+      #contact-div{
+            display: flex;
+            flex-direction: column;
+            padding: 2%;
+      }
+}
+
+@media (max-width:452px) and (min-width: 0px){
+      .button-tag-main-div{
+            flex-direction: column;
+      }
+      .navbar-nav{
+            display: flex;
+            flex-wrap: wrap;
+      }
+      .contact-me-icons{
+            display: flex;
+            justify-content: space-evenly;
+            gap: 5%;
+      }
+}

@@ -1,0 +1,202 @@
+.resume-main-div{
+      padding-left: 10%;
+      padding-right: 10%;
+}
+.resume {
+      font-family: 'Montserrat', sans-serif;
+      margin: 1%;
+      padding: 1%;
+      margin-top: 3%;
+      display: flex;
+      border: solid rgb(120, 120, 120);
+      border-radius: 5px;
+      border-width: 1px;
+      /* align-items: center; */
+      /* gap: 5%; */
+}
+
+.resume-1 {
+      width: 40%;
+      display: flex;
+      margin-left: 10%;
+      margin-top: 1%;
+      /* justify-content: center; */
+      padding: 1%;
+}
+
+.resume-2 {
+      width: 60%;
+      margin-top: 1%;
+      margin-right: 10%;
+      display: flex;
+      /* align-items: center; */
+      flex-direction: column;
+}
+
+.resume-2-1 {
+      margin: 2%;
+}
+
+h5 {
+      font-size: 1.3rem;
+}
+
+li {
+      font-size: 20px;
+}
+
+.skills-interest{
+      display: flex;
+      justify-content: space-evenly;
+      font-family: 'Montserrat', sans-serif;
+      margin: 1%;
+      margin-top: 3%;
+      border: solid rgb(120, 120, 120);
+      border-radius: 5px;
+      border-width: 1px;
+      padding: 2%;
+}
+
+
+
+/* MANDATORY FOR ALL THE PORTALS PLEASE */
+/* navbar */
+.navbar {
+      padding: 2%;
+}
+
+.navbar-brand-div {
+      display: flex;
+      align-items: center;
+      gap: 5%;
+
+}
+
+.brand-logo {
+      text-decoration: none;
+      display: flex;
+      /* border-radius: 100%;
+        background-color: rgb(151, 151, 151); */
+      align-items: center;
+      color: rgb(43, 43, 110);
+}
+
+.brand-logo:hover {
+      color: rgb(99, 99, 119);
+}
+
+.navbar-brand {
+      color: rgb(4, 4, 41);
+      text-decoration: none;
+}
+
+.navbar-brand:hover {
+      color: grey;
+}
+
+.nav-item {
+      border-right: solid black;
+      border-width: 0.2rem;
+}
+
+/* contact me div things */
+#contact-div {
+      background-color: rgb(197, 197, 197);
+      margin-top: 5%;
+      margin-bottom: 150px;
+      height: 250px;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-direction: row;
+      gap: 4rem;
+}
+
+.visiting {
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+}
+
+.email-icon {
+      height: 40px;
+}
+
+.email-icon:hover {
+      transition: 0.2s;
+      height: 50px;
+}
+
+.github-icon,
+.linkedin-icon {
+      height: 40px;
+      align-self: center;
+}
+
+.github-icon:hover,
+.linkedin-icon:hover {
+      transition: 0.25s;
+      height: 51px;
+}
+
+.contact-me-icons {
+      display: flex;
+      justify-content: space-evenly;
+      gap: 15%;
+}
+
+@media screen and (max-width: 988px) {
+      .profile-pic {
+            width: 400px;
+
+      }
+
+      .about-div-2 {
+            display: flex;
+            flex-direction: column;
+
+      }
+
+      #contact-div {
+            display: flex;
+            flex-direction: column;
+            padding: 2%;
+      }
+}
+
+@media (max-width:452px) and (min-width: 0px) {
+      .button-tag-main-div {
+            flex-direction: column;
+      }
+
+      .navbar-nav {
+            display: flex;
+            flex-wrap: wrap;
+      }
+
+      .contact-me-icons {
+            display: flex;
+            justify-content: space-evenly;
+            gap: 5%;
+      }
+}
+@media (max-width: 690px) and (min-width: 0px) {
+      .resume{
+            padding: 0%;
+      }
+      .resume-1{
+            margin-left: 2%;
+      }
+      .resume-2{
+            margin-right: 2%;
+      }
+}
+@media (max-width:540px) and (min-width: 0px) {
+      .skills-interest{
+            flex-direction: column;
+      }
+      .skill-interest-1{
+            display: flex;
+            justify-content: center;
+      }
+}
