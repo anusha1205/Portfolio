@@ -61,7 +61,7 @@
 }
 .button-tag-main-div{
       display: flex;
-      margin-top: 8%;
+      margin-top: 4%;
       gap: 2%;
       justify-content: center;
       align-items: center;
@@ -117,8 +117,8 @@
 #contact-div{
       background-color: rgb(197, 197, 197);
       margin-top: 5%;
-      margin-bottom: 150px;
-      height: 250px;
+/*       margin-bottom: 150px; */
+      height: 150px;
       display:  flex;
       justify-content: space-evenly;
       align-items: center;
