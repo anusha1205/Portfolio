@@ -27,6 +27,7 @@
             rel="stylesheet">
       <!-- CSS only -->
       <link rel="stylesheet" href="css/projects.css">
+      <link rel="stylesheet" href="style.css">
       <!-- favicon -->
       <link rel="icon" href="images/favicon_person_image.png">
 
@@ -34,17 +35,14 @@
 </head>
 
 <body>
-
+      <!-- NAVBAR SECTION -->
       <nav style="margin-bottom: 1%;background-color: rgb(216, 216, 216);padding: 1.5%;"
             class="navbar navbar-light navbar-expand-lg">
-            <div class="container-fluid">
+            <div class="container-fluid" style="display: flex;justify-content: space-around;">
                   <div class="navbar-brand-div">
                         <div style="display: flex;flex-direction: column;">
-                              <a class="navbar-brand" style="font-size: 2rem;font-family: 'Mulish', sans-serif;"
-                                    href="index.html">ANUSHA GONAL</a>
-                              <a class="navbar-brand"
-                                    style="font-size: 1.2rem;margin-left: 0%;font-family: 'Poppins', sans-serif;"
-                                    href="index.html">Computer Science Student</a>
+                              <a class="navbar-brand" href="index.html">ANUSHA GONAL</a>
+                              <a class="navbar-brand-c" href="index.html">Undergrad BE Student</a>
                         </div>
 
                   </div>
@@ -57,31 +55,32 @@
                   </div>
                   <div class="collapse navbar-collapse" id="navbarNav" style="flex-grow: 0;align-items: center;">
                         <ul class="navbar-nav"
-                              style="display: flex;flex-direction: row;margin-top: 3%;margin-bottom: 3%;justify-content: center;max-width: 100%;">
+                              style="display: flex;flex-direction: row;margin-top: 3%;margin-bottom: 3%;justify-content: flex-end;max-width: 100%;align-items: center;">
                               <li class="nav-item" style="padding: 0 2% 0 2%;">
-                                    <a style="color: rgb(4, 4, 41);font-size: 1.4rem;font-family: 'Montserrat', sans-serif;"
-                                          class="nav-link active" aria-current="page" href="index.html">Home</a>
-                              </li>
-                              <li class="nav-item" style="padding: 0 2% 0 2%;">
-                                    <a style="color: rgb(4, 4, 41);font-size: 1.4rem;font-family: 'Montserrat', sans-serif;"
-                                          class="nav-link" href="resume.html">Resume</a>
+                                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                               </li>
                               <li class="nav-item" style="padding: 0 2% 0 2%;">
-                                    <a style="color: rgb(4, 4, 41);font-size: 1.4rem;font-family: 'Montserrat', sans-serif;"
-                                          class="nav-link" href="projects.html">Projects</a>
+                                    <a class="nav-link active" href="resume.html">Resume</a>
                               </li>
                               <li class="nav-item" style="padding: 0 2% 0 2%;">
-                                    <a style="color: rgb(4, 4, 41);font-size: 1.4rem;font-family: 'Montserrat', sans-serif;"
-                                          class="nav-link" href="experience.html">Experience</a>
+                                    <a class="nav-link active" href="projects.html">Projects</a>
                               </li>
-                              <li class="nav-item" style="border-width: 0px;padding: 0 2% 0 2%;">
-                                    <a style="color: rgb(4, 4, 41);font-size: 1.4rem;font-family: 'Montserrat', sans-serif;"
-                                          class="nav-link " href="contact.html">Contact</a>
+                              <li class="nav-item"
+                                    style="border-width: 0px;padding: 0 2% 0 2%;width: 15%;height: 100%;">
+                                    <a href="#contact-div"
+                                          style="display: flex; align-items: center; gap: 8px;text-decoration: none;    ">
+                                          <img src="images/favicon_person_image.png" alt="Your-profile"
+                                                style="border-radius: 100%; width: 43%;">Contact
+                                    </a>
                               </li>
+                              <!-- <li class="nav-item" style="border-width: 0px;padding: 0 2% 0 2%;">
+                        <a class="nav-link  active" href="#contact-div">Contact</a>
+                  </li> -->
                         </ul>
                   </div>
             </div>
       </nav>
+
 
 
 
@@ -485,30 +484,18 @@
 
 
 
-
-
-
-
-
-
       <!-- contact me div -->
       <div id="contact-div">
             <div class="visiting">
                   <div>
-                        <h1>Thanks for Visiting !</h1>
+                        <h3>Thanks for Visiting !</h3>
                   </div>
                   <div>
-                        <p
-                              style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 22px;">
-                              ©Anusha Gonal.</p>
+                        <p>©Anusha Gonal.</p>
                   </div>
             </div>
             <div class="contact-me-icons">
-                  <div class="">
-                        <!-- <form action="mailto:anushamg2005@gmail.com" method="post" enctype="text/plain">
-           
-                        </form> -->
-                        <!-- EMAIL MAIL:TO KHULNA CHAHIYE ISME-->
+                  <div>
                         <button style="background: none;border: none;">
                               <a href='mailto:anushamg2005@gmail.com'><img class="email-icon"
                                           src="images/email.png"></a>
@@ -534,6 +521,9 @@
                   </div>
             </div>
       </div>
+
+
+
 </body>
 
 </html>
