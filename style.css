@@ -45,8 +45,8 @@
       color: grey;
 }
 
-.nav-item {
-      border-right: solid black;
+.nav-item :hover {
+      color: blue;
 }
 
 .nav-item a {

@@ -1,6 +1,6 @@
 .resume-main-div{
-      padding-left: 10%;
-      padding-right: 10%;
+      padding-left: 15%;
+      padding-right: 15%;
 }
 .resume {
       font-family: 'Montserrat', sans-serif;
@@ -16,7 +16,7 @@
 }
 
 .resume-1 {
-      width: 40%;
+      width: 18%;
       display: flex;
       margin-left: 10%;
       margin-top: 1%;
@@ -25,9 +25,9 @@
 }
 
 .resume-2 {
-      width: 60%;
-      margin-top: 1%;
-      margin-right: 10%;
+      width: 75%;
+      
+      margin-right: 5%;
       display: flex;
       /* align-items: center; */
       flex-direction: column;
@@ -37,12 +37,8 @@
       margin: 2%;
 }
 
-h5 {
-      font-size: 1.3rem;
-}
-
 li {
-      font-size: 20px;
+      font-size: 13px;
 }
 
 .skills-interest{
@@ -94,9 +90,14 @@ li {
       color: grey;
 }
 
-.nav-item {
-      border-right: solid black;
-      border-width: 0.2rem;
+.nav-item :hover {
+      color: blue;
+}
+
+.nav-item a {
+      color: rgb(4, 4, 41);
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.1rem;
 }
 
 /* contact me div things */

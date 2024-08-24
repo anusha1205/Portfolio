@@ -92,11 +92,15 @@
 .navbar-brand:hover{
       color: grey;
 }
-.nav-item{
-      border-right: solid black;
-      border-width: 0.2rem;     
+.nav-item :hover {
+      color: blue;
 }
 
+.nav-item a {
+      color: rgb(4, 4, 41);
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.1rem;
+}
 /* contact me div things */
 #contact-div{
       background-color: rgb(197, 197, 197);
