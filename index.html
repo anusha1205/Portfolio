@@ -750,8 +750,11 @@
 
             function updateCarousel() {
                   cards.forEach((card, idx) => {
-                        card.style.display = idx === currentSlide ? 'block' : 'none';
-                        if (idx === currentSlide) card.scrollIntoView({ block: 'nearest' });
+                        if (idx === currentSlide) {
+                              card.classList.add('active');
+                        } else {
+                              card.classList.remove('active');
+                        }
                   });
                   dots.forEach((dot, idx) => {
                         dot.classList.toggle('active', idx === currentSlide);
