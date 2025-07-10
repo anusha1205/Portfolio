@@ -4,161 +4,802 @@
 <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Portfolio</title>
-      <!-- CSS -->
-      <link rel="stylesheet" href="style.css">
-      <!-- JAVASCRIPT -->
+      <title>Anusha Gonal - Portfolio</title>
 
-      <!-- FAVICON -->
-      <link rel="icon" href="images/favicon_person_image.png">
-      <!-- BOOSTRAP -->
+      <!-- Bootstrap -->
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
             crossorigin="anonymous"></script>
 
+      <!-- Fonts -->
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&family=Merriweather&family=Montserrat:wght@400;500&family=Open+Sans&family=Playpen+Sans:wght@200&display=swap"
-            rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&family=Merriweather&family=Montserrat:wght@400;500&family=Mulish:wght@700&family=Open+Sans&family=Playpen+Sans:wght@200&display=swap"
-            rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&family=Merriweather&family=Montserrat:wght@400;500&family=Mulish:wght@700&family=Open+Sans&family=Playpen+Sans:wght@200&family=Poppins&display=swap"
+      <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&family=Merriweather&family=Montserrat:wght@400;500;600;700&family=Open+Sans&family=Playpen+Sans:wght@200&family=Poppins:wght@200;300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap"
             rel="stylesheet">
 
+      <!-- Font Awesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+      <!-- Favicon -->
+      <link rel="icon" href="images/favicon_person_image.png">
+
+      <!-- Custom CSS -->
+      <link rel="stylesheet" href="style.css">
+      <style>
+            .project-card {
+                  max-width: 340px !important;
+                  width: 100%;
+                  margin: 0 auto;
+                  padding: 0.8rem !important;
+                  font-size: 0.97rem;
+                  background: #1a1a2e;
+                  border-radius: 20px;
+                  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+                  position: relative;
+                  min-height: auto;
+                  height: auto;
+            }
+
+            .project-title {
+                  font-size: 1.15rem !important;
+                  margin-bottom: 0.5rem;
+            }
+
+            .project-description {
+                  font-size: 0.97rem !important;
+                  margin-bottom: 0.7rem;
+            }
+
+            .tech-tag {
+                  font-size: 0.85rem !important;
+                  padding: 0.18rem 0.7rem;
+            }
+
+            .project-links .btn {
+                  font-size: 0.95rem !important;
+                  padding: 0.4rem 1.1rem;
+            }
+
+            .mini-carousel {
+                  height: 180px !important;
+            }
+
+            .mini-carousel-img {
+                  height: 180px !important;
+            }
+
+            @media (max-width: 600px) {
+                  .project-card {
+                        max-width: 98vw !important;
+                        padding: 0.5rem !important;
+                        font-size: 0.93rem;
+                  }
+
+                  .project-title {
+                        font-size: 1rem !important;
+                  }
+
+                  .project-description {
+                        font-size: 0.9rem !important;
+                  }
+
+                  .tech-tag {
+                        font-size: 0.8rem !important;
+                  }
+
+                  .carousel-btn {
+                        width: 36px !important;
+                        height: 36px !important;
+                  }
+
+                  .mini-carousel {
+                        height: 150px !important;
+                  }
+
+                  .mini-carousel-img {
+                        height: 150px !important;
+                  }
+            }
+      </style>
+      <style>
+            .contact-section .section-title {
+                  font-size: 1.3rem !important;
+            }
+
+            .contact-section .section-subtitle {
+                  font-size: 0.98rem !important;
+            }
+
+            .contact-info {
+                  font-size: 0.97rem !important;
+                  /* max-width: 420px; */
+                  margin: 0 auto;
+                  padding: 1.2rem 0.7rem;
+                  border-radius: 18px;
+                  background: #18182a;
+            }
+
+            .contact-item i {
+                  font-size: 1.3rem !important;
+                  margin-right: 0.7rem;
+            }
+
+            .contact-item h4 {
+                  font-size: 1.02rem !important;
+                  margin-bottom: 0.2rem;
+            }
+
+            .contact-item a {
+                  font-size: 0.97rem !important;
+            }
+
+            @media (max-width: 600px) {
+                  .contact-section .section-title {
+                        font-size: 1.05rem !important;
+                  }
+
+                  .contact-info {
+                        max-width: 98vw;
+                        padding: 0.5rem 0.2rem;
+                  }
+
+                  .contact-item i {
+                        font-size: 1.1rem !important;
+                  }
+
+                  .contact-item h4 {
+                        font-size: 0.95rem !important;
+                  }
+
+                  .contact-item a {
+                        font-size: 0.9rem !important;
+                  }
+            }
+      </style>
 </head>
 
-<body style="background-color: rgb(255, 255, 255);">
+<body>
+      <!-- Navigation -->
+      <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                  <a class="navbar-brand" href="#home">
+                        <span class="brand-name">ANUSHA GONAL</span>
+                        <span class="brand-subtitle">Undergrad BE Student</span>
+                  </a>
 
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                  </button>
 
-
-      <!-- NAVBAR SECTION -->
-      <nav style="margin-bottom: 1%;background-color: rgb(216, 216, 216);padding: 1.5%;"
-            class="navbar navbar-light navbar-expand-lg">
-            <div class="container-fluid" style="display: flex;justify-content: space-around;">
-                  <div class="navbar-brand-div">
-                        <div style="display: flex;flex-direction: column;">
-                              <a class="navbar-brand" href="index.html">ANUSHA GONAL</a>
-                              <a class="navbar-brand-c" href="index.html">Undergrad BE Student</a>
-                        </div>
-
-                  </div>
-                  <div>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                              data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                              aria-label="Toggle navigation">
-                              <span class="navbar-toggler-icon"></span>
-                        </button>
-                  </div>
-                  <div class="collapse navbar-collapse" id="navbarNav" style="flex-grow: 0;align-items: center;">
-                        <ul class="navbar-nav"
-                              style="display: flex;flex-direction: row;margin-top: 3%;margin-bottom: 3%;justify-content: space-around;align-items: center;">
-                              <li class="nav-item" style="padding: 0 2% 0 2%;">
-                                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                              <li class="nav-item">
+                                    <a class="nav-link" href="#home">Home</a>
                               </li>
-                              <li class="nav-item" style="padding: 0 2% 0 2%;">
-                                    <a class="nav-link active" href="resume.html">Resume</a>
+                              <li class="nav-item">
+                                    <a class="nav-link" href="#about">About</a>
                               </li>
-                              <li class="nav-item" style="padding: 0 2% 0 2%;">
-                                    <a class="nav-link active" href="projects.html">Projects</a>
+                              <li class="nav-item">
+                                    <a class="nav-link" href="#projects">Projects</a>
                               </li>
-                              <li class="nav-item" style="padding: 0 2% 0 2%;">
-                                    <a href="#contact-div"
-                                          style="display: flex; align-items: center; gap: 8px;text-decoration: none;">
-                                          Contact
-                                    </a>
+                              <li class="nav-item">
+                                    <a class="nav-link" href="#resume">Resume</a>
+                              </li>
+                              <li class="nav-item">
+                                    <a class="nav-link" href="#contact">Contact</a>
                               </li>
                         </ul>
                   </div>
             </div>
       </nav>
 
-      <!-- ABOUT ME DIV -->
-      <div id="about">
-            <div class="about-div-1">
-                  <h3 style="text-decoration: underline;">About Me</h3>
-            </div>
-            <div class="about-div-2">
-                  <div style="text-align: center;">
-                        <img class="profile-pic" src="images/profile-pic.jpeg">
-                  </div>
-                  <div class="about-div-2-2">
-                        <div>
-                              <h2 style="text-align: center;">Anusha Gonal</h2>
-                        </div>
-                        <div style="margin-top: 3%;">
-                              <p style="padding: 2%;font-family: 'Montserrat', sans-serif;">I Anusha Gonal, am an
-                                    undergrad Computer Science student at Vivekanand Educational Society's Institute of
-                                    Technology.
-                                    <br>My hobbies are singing and dancing and also to play sports like Lawn Tennis,
-                                    Badminton and football. As a person am very curious and have an eagerness to learn
-                                    new
-                                    skills if given an opportunity.
-                                    <br> I am a "go with the flow" person taking every
-                                    difficulty in life as a challenge to make myself more stronger.
-                              </p>
-                        </div>
-                        <div class="button-tag-main-div">
-                              <div type="button" class="resume-button">
-                                    <a class="tags" style="font-family: 'Poppins', sans-serif;font-size: 1.2rem;"
-                                          href="resume.html">Resume</a>
+      <!-- Hero Section -->
+      <section id="home" class="hero-section">
+            <div class="container">
+                  <div class="row align-items-center min-vh-100">
+                        <div class="col-lg-6">
+                              <div class="hero-content">
+                                    <h1 class="hero-title">Hi, I'm <span class="highlight">Anusha Gonal</span></h1>
+                                    <p class="hero-subtitle">Computer Science Undergrad Student</p>
+                                    <p class="hero-description">
+                                          Passionate about technology and innovation. I love creating meaningful
+                                          solutions
+                                          through code and exploring new technologies.
+                                    </p>
+                                    <div class="hero-buttons">
+                                          <a href="#projects" class="btn btn-primary">View Projects</a>
+                                          <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                                    </div>
                               </div>
-                              <div type="button" class="projects-button">
-                                    <a class="tags" style="font-family: 'Poppins', sans-serif;font-size: 1.2rem;"
-                                          href="projects.html">Projects</a>
+                        </div>
+                        <div class="col-lg-6">
+                              <div class="hero-image">
+                                    <img src="images/profile-pic.jpeg" alt="Anusha Gonal" class="profile-image">
                               </div>
-
-                              <div type="button" class="contact-button">
-                                    <a class="tags" style="font-family: 'Poppins', sans-serif;font-size: 1.2rem;"
-                                          href="">Contact</a>
-                              </div class="button">
                         </div>
                   </div>
             </div>
-      </div>
+      </section>
 
-
-
-
-      <!-- contact me div -->
-      <div id="contact-div">
-            <div class="visiting">
-                  <div>
-                        <h3>Thanks for Visiting !</h3>
+      <!-- About Section -->
+      <section id="about" class="about-section">
+            <div class="container">
+                  <div class="section-header">
+                        <h2 class="section-title">About Me</h2>
+                        <div class="section-divider"></div>
                   </div>
-                  <div>
-                        <p>©Anusha Gonal.</p>
+
+                  <div class="row align-items-center">
+                        <div class="col-lg-6">
+                              <div class="about-image">
+                                    <img src="images/profile-pic.jpeg" alt="Anusha Gonal" class="about-profile">
+                              </div>
+                        </div>
+                        <div class="col-lg-6">
+                              <div class="about-content">
+                                    <h3 class="about-name">Anusha Gonal</h3>
+                                    <p class="about-text">
+                                          I am an undergrad Computer Science student at Vivekanand Educational Society's
+                                          Institute of Technology.
+                                          My hobbies include singing, dancing, and playing sports like Lawn Tennis,
+                                          Badminton, and football.
+                                    </p>
+                                    <p class="about-text">
+                                          As a person, I am very curious and have an eagerness to learn new skills if
+                                          given an opportunity.
+                                          I am a "go with the flow" person taking every difficulty in life as a
+                                          challenge to make myself stronger.
+                                    </p>
+
+                                    <div class="skills-grid">
+                                          <div class="skill-item">
+                                                <i class="fas fa-code"></i>
+                                                <span>Java Development</span>
+                                          </div>
+                                          <div class="skill-item">
+                                                <i class="fas fa-cloud"></i>
+                                                <span>Cloud Computing</span>
+                                          </div>
+                                          <div class="skill-item">
+                                                <i class="fas fa-users"></i>
+                                                <span>Team Collaboration</span>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
                   </div>
             </div>
-            <div class="contact-me-icons">
-                  <div>
-                        <button style="background: none;border: none;">
-                              <a href='mailto:anushamg2005@gmail.com'><img class="email-icon"
-                                          src="images/email.png"></a>
-                        </button>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="projects-section">
+            <div class="container">
+                  <div class="section-header">
+                        <h2 class="section-title">My Projects</h2>
+                        <div class="section-divider"></div>
                   </div>
-                  <div>
-                        <button style="background: none;border: none;">
-                              <a href="https://github.com/anusha1205"><img class="github-icon"
-                                          src="images/github.png"></a>
+                  <div class="projects-carousel single-card-carousel">
+                        <div class="carousel-card-wrapper"
+                              style="display:flex;align-items:center;justify-content:center;margin:0 ;position:relative;">
+
+                              <!-- HomeKart Project Duplicate with Mini Carousel -->
+                              <div class="project-card">
+                                    <div class="mini-carousel"
+                                          style="position:relative;width:100%;height:180px;overflow:hidden;margin-bottom:1.2rem;">
+                                          <img src="projects image/homekart/2-addtocart.png" class="mini-carousel-img"
+                                                style="width:100%;height:180px;object-fit:cover;border-radius:12px;display:block;position:absolute;top:0;left:0;transition:opacity 0.3s;opacity:1;z-index:1;">
+                                          <img src="projects image/homekart/3-paymentdetails.png"
+                                                class="mini-carousel-img"
+                                                style="width:100%;height:180px;object-fit:cover;border-radius:12px;display:block;position:absolute;top:0;left:0;transition:opacity 0.3s;opacity:0;z-index:1;">
+                                          <img src="projects image/homekart/4-myorders-customer.png"
+                                                class="mini-carousel-img"
+                                                style="width:100%;height:180px;object-fit:cover;border-radius:12px;display:block;position:absolute;top:0;left:0;transition:opacity 0.3s;opacity:0;z-index:1;">
+                                          <img src="projects image/homekart/5-delivery-agent-myorders.png"
+                                                class="mini-carousel-img"
+                                                style="width:100%;height:180px;object-fit:cover;border-radius:12px;display:block;position:absolute;top:0;left:0;transition:opacity 0.3s;opacity:0;z-index:1;">
+                                          <img src="projects image/homekart/6-admin-dashboard.png"
+                                                class="mini-carousel-img"
+                                                style="width:100%;height:180px;object-fit:cover;border-radius:12px;display:block;position:absolute;top:0;left:0;transition:opacity 0.3s;opacity:0;z-index:1;">
+                                          <img src="projects image/homekart/7-admin-analytics.png"
+                                                class="mini-carousel-img"
+                                                style="width:100%;height:180px;object-fit:cover;border-radius:12px;display:block;position:absolute;top:0;left:0;transition:opacity 0.3s;opacity:0;z-index:1;">
+                                          <button class="mini-carousel-btn mini-prev"
+                                                onclick="moveMiniCarousel(-1, this)"
+                                                style="position:absolute;top:50%;left:8px;transform:translateY(-50%);z-index:2;width:32px;height:32px;border-radius:50%;background:rgba(60,60,100,0.7);color:#fff;border:none;display:flex;align-items:center;justify-content:center;font-size:1.2rem;cursor:pointer;">
+                                                <i class="fas fa-chevron-left"></i>
+                                          </button>
+                                          <button class="mini-carousel-btn mini-next"
+                                                onclick="moveMiniCarousel(1, this)"
+                                                style="position:absolute;top:50%;right:8px;transform:translateY(-50%);z-index:2;width:32px;height:32px;border-radius:50%;background:rgba(60,60,100,0.7);color:#fff;border:none;display:flex;align-items:center;justify-content:center;font-size:1.2rem;cursor:pointer;">
+                                                <i class="fas fa-chevron-right"></i>
+                                          </button>
+                                          <div class="mini-carousel-dots"
+                                                style="position:absolute;bottom:10px;left:50%;transform:translateX(-50%);display:flex;gap:0.4rem;z-index:3;">
+                                                <span class="mini-dot" onclick="goToMiniSlide(0, this)"
+                                                      style="width:9px;height:9px;border-radius:50%;background:#fff;opacity:0.5;cursor:pointer;transition:all 0.2s;"></span>
+                                                <span class="mini-dot" onclick="goToMiniSlide(1, this)"
+                                                      style="width:9px;height:9px;border-radius:50%;background:#fff;opacity:0.5;cursor:pointer;transition:all 0.2s;"></span>
+                                                <span class="mini-dot" onclick="goToMiniSlide(2, this)"
+                                                      style="width:9px;height:9px;border-radius:50%;background:#fff;opacity:0.5;cursor:pointer;transition:all 0.2s;"></span>
+                                                <span class="mini-dot" onclick="goToMiniSlide(3, this)"
+                                                      style="width:9px;height:9px;border-radius:50%;background:#fff;opacity:0.5;cursor:pointer;transition:all 0.2s;"></span>
+                                                <span class="mini-dot" onclick="goToMiniSlide(4, this)"
+                                                      style="width:9px;height:9px;border-radius:50%;background:#fff;opacity:0.5;cursor:pointer;transition:all 0.2s;"></span>
+                                                <span class="mini-dot" onclick="goToMiniSlide(5, this)"
+                                                      style="width:9px;height:9px;border-radius:50%;background:#fff;opacity:0.5;cursor:pointer;transition:all 0.2s;"></span>
+                                          </div>
+                                    </div>
+                                    <div class="project-content">
+
+                                          <center>
+                                                <h3 class="project-title">HomeKart</h3>
+                                          </center>
+                                          <p class="project-description">
+                                                Advanced e-commerce platform with real-time inventory management,
+                                                automated order assignment to delivery agents, and comprehensive
+                                                admin analytics dashboard for business insights.
+                                          </p>
+                                          <div class="project-tech">
+                                                <span class="tech-tag">React</span>
+                                                <span class="tech-tag">Java</span>
+                                                <span class="tech-tag">Spring Boot</span>
+                                                <span class="tech-tag">MySQL</span>
+                                                <span class="tech-tag">AWS RDS</span>
+                                                <span class="tech-tag">AWS S3</span>
+                                          </div>
+                                          <div class="project-links">
+                                                <a href="https://github.com/anusha1205/HomeKart-Java-SpringBoot"
+                                                      class="btn btn-sm btn-primary">
+                                                      <i class="fab fa-github"></i> GitHub
+                                                </a>
+                                                <a href="https://www.youtube.com/watch?v=4DOQ-Zjie08"
+                                                      class="btn btn-sm btn-outline">
+                                                      <i class="fas fa-external-link-alt"></i> Live Demo
+                                                </a>
+                                          </div>
+                                    </div>
+                              </div>
+
+                              <!-- Algoscope Project -->
+                              <div class="project-card">
+                                    <div class="mini-carousel"
+                                          style="position:relative;width:100%;height:180px;overflow:hidden;margin-bottom:1.2rem;">
+                                          <img src="projects image/algoscope/0-home-page-algoscope.png"
+                                                class="mini-carousel-img"
+                                                style="width:100%;height:180px;object-fit:cover;border-radius:12px;display:block;position:absolute;top:0;left:0;transition:opacity 0.3s;opacity:1;z-index:1;">
+                                          <img src="projects image/algoscope/1-merge-sorting.png"
+                                                class="mini-carousel-img"
+                                                style="width:100%;height:180px;object-fit:cover;border-radius:12px;display:block;position:absolute;top:0;left:0;transition:opacity 0.3s;opacity:0;z-index:1;">
+                                          <img src="projects image/algoscope/2-linkedlist-inserting.png"
+                                                class="mini-carousel-img"
+                                                style="width:100%;height:180px;object-fit:cover;border-radius:12px;display:block;position:absolute;top:0;left:0;transition:opacity 0.3s;opacity:0;z-index:1;">
+                                          <img src="projects image/algoscope/3-tree.png" class="mini-carousel-img"
+                                                style="width:100%;height:180px;object-fit:cover;border-radius:12px;display:block;position:absolute;top:0;left:0;transition:opacity 0.3s;opacity:0;z-index:1;">
+                                          <img src="projects image/algoscope/4-1-graph-nodes.png"
+                                                class="mini-carousel-img"
+                                                style="width:100%;height:180px;object-fit:cover;border-radius:12px;display:block;position:absolute;top:0;left:0;transition:opacity 0.3s;opacity:0;z-index:1;">
+                                          <img src="projects image/algoscope/4-2-bfs-dfs.png" class="mini-carousel-img"
+                                                style="width:100%;height:180px;object-fit:cover;border-radius:12px;display:block;position:absolute;top:0;left:0;transition:opacity 0.3s;opacity:0;z-index:1;">
+                                          <button class="mini-carousel-btn mini-prev"
+                                                onclick="moveMiniCarousel(-1, this)"
+                                                style="position:absolute;top:50%;left:8px;transform:translateY(-50%);z-index:2;width:32px;height:32px;border-radius:50%;background:rgba(60,60,100,0.7);color:#fff;border:none;display:flex;align-items:center;justify-content:center;font-size:1.2rem;cursor:pointer;">
+                                                <i class="fas fa-chevron-left"></i>
+                                          </button>
+                                          <button class="mini-carousel-btn mini-next"
+                                                onclick="moveMiniCarousel(1, this)"
+                                                style="position:absolute;top:50%;right:8px;transform:translateY(-50%);z-index:2;width:32px;height:32px;border-radius:50%;background:rgba(60,60,100,0.7);color:#fff;border:none;display:flex;align-items:center;justify-content:center;font-size:1.2rem;cursor:pointer;">
+                                                <i class="fas fa-chevron-right"></i>
+                                          </button>
+                                          <div class="mini-carousel-dots"
+                                                style="position:absolute;bottom:10px;left:50%;transform:translateX(-50%);display:flex;gap:0.4rem;z-index:3;">
+                                                <span class="mini-dot" onclick="goToMiniSlide(0, this)"
+                                                      style="width:9px;height:9px;border-radius:50%;background:#fff;opacity:0.5;cursor:pointer;transition:all 0.2s;"></span>
+                                                <span class="mini-dot" onclick="goToMiniSlide(1, this)"
+                                                      style="width:9px;height:9px;border-radius:50%;background:#fff;opacity:0.5;cursor:pointer;transition:all 0.2s;"></span>
+                                                <span class="mini-dot" onclick="goToMiniSlide(2, this)"
+                                                      style="width:9px;height:9px;border-radius:50%;background:#fff;opacity:0.5;cursor:pointer;transition:all 0.2s;"></span>
+                                                <span class="mini-dot" onclick="goToMiniSlide(3, this)"
+                                                      style="width:9px;height:9px;border-radius:50%;background:#fff;opacity:0.5;cursor:pointer;transition:all 0.2s;"></span>
+                                                <span class="mini-dot" onclick="goToMiniSlide(4, this)"
+                                                      style="width:9px;height:9px;border-radius:50%;background:#fff;opacity:0.5;cursor:pointer;transition:all 0.2s;"></span>
+                                                <span class="mini-dot" onclick="goToMiniSlide(5, this)"
+                                                      style="width:9px;height:9px;border-radius:50%;background:#fff;opacity:0.5;cursor:pointer;transition:all 0.2s;"></span>
+                                          </div>
+                                    </div>
+                                    <div class="project-content">
+                                          <center>
+                                                <h3 class="project-title">Algoscope</h3>
+                                          </center>
+                                          <p class="project-description">
+                                                DSA Visualizer web app to interactively explore and understand data
+                                                structures and algorithms.<br>
+                                                Features step-by-step visualizations for sorting, trees, graphs, and
+                                                more.
+                                          </p>
+                                          <div class="project-tech">
+                                                <span class="tech-tag">React</span>
+                                                <span class="tech-tag">JavaScript</span>
+                                                <span class="tech-tag">CSS</span>
+                                                <span class="tech-tag">Algorithms</span>
+                                          </div>
+                                          <div class="project-links">
+                                                <a href="https://github.com/anusha1205/Algoscope"
+                                                      class="btn btn-sm btn-primary">
+                                                      <i class="fab fa-github"></i> GitHub
+                                                </a>
+                                                <a href="#" class="btn btn-sm btn-outline">
+                                                      <i class="fas fa-external-link-alt"></i> Live Demo
+                                                </a>
+                                          </div>
+                                    </div>
+                              </div>
+                              <!-- AirAware Project -->
+                              <div class="project-card">
+                                    <div class="project-image">
+                                          <img src="projects image/showAirAware.jpeg" alt="AirAware"
+                                                style="width:100%;border-radius:12px;">
+                                    </div>
+                                    <div class="project-content">
+                                          <h3 class="project-title">AirAware</h3>
+                                          <p class="project-description">
+                                                A comprehensive platform designed to assist individuals with respiratory
+                                                conditions
+                                                in navigating air quality concerns across India with real-time AQI
+                                                monitoring.
+                                          </p>
+                                          <div class="project-tech">
+                                                <span class="tech-tag">HTML</span>
+                                                <span class="tech-tag">CSS</span>
+                                                <span class="tech-tag">JavaScript</span>
+                                                <span class="tech-tag">Firebase</span>
+                                          </div>
+                                          <div class="project-links">
+                                                <a href="https://airaware-f22c0.web.app/"
+                                                      class="btn btn-sm btn-primary">
+                                                      <i class="fas fa-external-link-alt"></i> Live Demo
+                                                </a>
+                                                <a href="https://github.com/AadilShah786/AirAware"
+                                                      class="btn btn-sm btn-outline">
+                                                      <i class="fab fa-github"></i> GitHub
+                                                </a>
+                                          </div>
+                                    </div>
+                              </div>
+                              <!-- ExpenseTracker Project -->
+                              <div class="project-card">
+                                    <div class="project-image">
+                                          <img src="projects image/expensetracker-image.png" alt="ExpenseTracker"
+                                                style="width:100%;border-radius:12px;">
+                                    </div>
+                                    <div class="project-content">
+                                          <center>
+                                                <h3 class="project-title">ExpenseTracker</h3>
+                                          </center>
+
+                                          <p class="project-description">
+                                                A personal expense tracker built using Java, Java Swing, and MySQL to
+                                                help
+                                                individuals manage their daily expenses, savings, and budget.
+                                          </p>
+                                          <div class="project-tech">
+                                                <span class="tech-tag">Java</span>
+                                                <span class="tech-tag">Java Swing</span>
+                                                <span class="tech-tag">MySQL</span>
+                                                <span class="tech-tag">OOPS</span>
+                                          </div>
+                                          <div class="project-links">
+                                                <a href="https://github.com/anusha1205/ExpenseTracker"
+                                                      class="btn btn-sm btn-primary">
+                                                      <i class="fab fa-github"></i> GitHub
+                                                </a>
+                                                <a href="https://www.linkedin.com/posts/anusha-gonal-440ab5283_hello-everyone-im-excited-to-introduce-activity-7214589361168777218-2Rpl?utm_source=share&utm_medium=member_desktop"
+                                                      class="btn btn-sm btn-outline">
+                                                      <i class="fab fa-linkedin"></i> LinkedIn
+                                                </a>
+                                          </div>
+                                    </div>
+                              </div>
+
+                        </div>
+                        <!-- Carousel Navigation -->
+                        <button class="carousel-btn prev-btn" onclick="moveCarousel(-1)"
+                              style="position:absolute;top:50%;left:-56px;transform:translateY(-50%);z-index:10;width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#6366f1 0%,#8b5cf6 100%);color:#fff;border:none;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,0.15);">
+                              <i class="fas fa-chevron-left"></i>
                         </button>
-                  </div>
-                  <div>
-                        <button style="background: none;border: none;">
-                              <a href="https://www.linkedin.com/in/anusha-gonal-440ab5283/"><img class="linkedin-icon"
-                                          src="images/linkedin.png"></a>
+                        <button class="carousel-btn next-btn" onclick="moveCarousel(1)"
+                              style="position:absolute;top:50%;right:-56px;transform:translateY(-50%);z-index:10;width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#6366f1 0%,#8b5cf6 100%);color:#fff;border:none;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,0.15);">
+                              <i class="fas fa-chevron-right"></i>
                         </button>
-                  </div>
-                  <div>
-                        <button style="background: none;border: none;">
-                              <a href="https://www.instagram.com/ango_1205/"><img class="linkedin-icon"
-                                          src="images/instagram_logo.png"></a>
-                        </button>
+                        <div class="carousel-dots"
+                              style="display:flex;justify-content:center;align-items:center;gap:0.7rem;">
+                              <span class="dot active" onclick="goToSlide(0)"
+                                    style="width:13px;height:13px;border-radius:50%;background:#27272a;cursor:pointer;transition:all 0.3s;"></span>
+                              <span class="dot" onclick="goToSlide(1)"
+                                    style="width:13px;height:13px;border-radius:50%;background:#27272a;cursor:pointer;transition:all 0.3s;"></span>
+                              <span class="dot" onclick="goToSlide(2)"
+                                    style="width:13px;height:13px;border-radius:50%;background:#27272a;cursor:pointer;transition:all 0.3s;"></span>
+                              <span class="dot" onclick="goToSlide(3)"
+                                    style="width:13px;height:13px;border-radius:50%;background:#27272a;cursor:pointer;transition:all 0.3s;"></span>
+                        </div>
                   </div>
             </div>
-      </div>
+      </section>
 
+      <!-- Resume Section -->
+      <section id="resume" class="resume-section">
+            <div class="container-resume">
+                  <div class="section-header">
+                        <h2 class="section-title">Resume</h2>
+                        <div class="section-divider"></div>
+                        <p class="section-subtitle">
+                              Download my complete resume:
+                              <a href="Anusha Mahadev Gonal RESUME.pdf" class="resume-link">
+                                    <i class="fas fa-download"></i> Download PDF
+                              </a>
+                        </p>
+                  </div>
+
+                  <div class="resume-content">
+                        <div class="row">
+                              <div class="col-lg-6">
+                                    <div class="resume-card">
+                                          <div class="card-header">
+                                                <i class="fas fa-graduation-cap"></i>
+                                                <h4>Education</h4>
+                                          </div>
+                                          <div class="card-content">
+                                                <div class="timeline-item">
+                                                      <h6>Vivekanand Education Society's Institute of Technology, Mumbai
+                                                      </h6>
+                                                      <p class="timeline-date">2023 - Present</p>
+                                                      <p>Computer Science Undergrad Student (2nd Year)</p>
+                                                </div>
+                                                <div class="timeline-item">
+                                                      <h6>Atomic Energy Central School, Mumbai</h6>
+                                                      <p class="timeline-date">2012 - 2021</p>
+                                                      <p>Primary, Secondary Schooling & Junior College</p>
+                                                </div>
+                                          </div>
+                                    </div>
+                              </div>
+
+                              <div class="col-lg-6">
+                                    <div class="resume-card">
+                                          <div class="card-header">
+                                                <i class="fas fa-briefcase"></i>
+                                                <h4>Work Experience</h4>
+                                          </div>
+                                          <div class="card-content">
+                                                <div class="timeline-item">
+                                                      <h6>Web Development Intern - CodeClause, Mumbai</h6>
+                                                      <p class="timeline-date">August 2021</p>
+                                                      <p>Online Internship focusing on HTML, CSS, JS, Node.js, Socket.io
+                                                      </p>
+                                                      <p>Created 3 projects: chat application, music player, pet
+                                                            adoption centre</p>
+                                                </div>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+
+                        <div class="skills-section">
+                              <div class="row">
+                                    <div class="col-lg-4">
+                                          <div class="skills-card">
+                                                <div class="card-header">
+                                                      <i class="fas fa-code"></i>
+                                                      <h4>Technical Skills</h4>
+                                                </div>
+                                                <div class="card-content">
+                                                      <ul class="skills-list">
+                                                            <li>Leetcode Problem Solving</li>
+                                                            <li>Java Development</li>
+                                                            <li>Web Development</li>
+                                                            <li>Database Management</li>
+                                                      </ul>
+                                                </div>
+                                          </div>
+                                    </div>
+
+                                    <div class="col-lg-4">
+                                          <div class="skills-card">
+                                                <div class="card-header">
+                                                      <i class="fas fa-lightbulb"></i>
+                                                      <h4>Areas of Interest</h4>
+                                                </div>
+                                                <div class="card-content">
+                                                      <ul class="skills-list">
+                                                            <li>Java Development</li>
+                                                            <li>Cloud Computing</li>
+                                                            <li>Full Stack Development</li>
+                                                      </ul>
+                                                </div>
+                                          </div>
+                                    </div>
+
+                                    <div class="col-lg-4">
+                                          <div class="skills-card">
+                                                <div class="card-header">
+                                                      <i class="fas fa-heart"></i>
+                                                      <h4>Hobbies</h4>
+                                                </div>
+                                                <div class="card-content">
+                                                      <ul class="skills-list">
+                                                            <li>Dancing free style</li>
+                                                            <li>Sports (Badminton & Tennis)</li>
+                                                            <li>Music</li>
+                                                      </ul>
+                                                </div>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact-section">
+            <div class="container">
+                  <div class="section-header">
+                        <h2 class="section-title">Get In Touch</h2>
+                        <div class="section-divider"></div>
+                        <p class="section-subtitle">Let's connect and discuss opportunities!</p>
+                  </div>
+
+                  <div class="contact-content">
+                        <div class="row justify-content-center">
+                              <div class="row-lg-8">
+                                    <div class="contact-info">
+                                          <div class="contact-item">
+                                                <i class="fas fa-envelope"></i>
+                                                <div>
+                                                      <h4>Email</h4>
+                                                      <a href="mailto:anushamg2005@gmail.com">anushamg2005@gmail.com</a>
+                                                </div>
+                                          </div>
+
+                                          <div class="contact-item">
+                                                <i class="fab fa-github"></i>
+                                                <div>
+                                                      <h4>GitHub</h4>
+                                                      <a href="https://github.com/anusha1205"
+                                                            target="_blank">github.com/anusha1205</a>
+                                                </div>
+                                          </div>
+
+                                          <div class="contact-item">
+                                                <i class="fab fa-linkedin"></i>
+                                                <div>
+                                                      <h4>LinkedIn</h4>
+                                                      <a href="https://www.linkedin.com/in/anusha-gonal-440ab5283/"
+                                                            target="_blank">linkedin.com/in/anusha-gonal</a>
+                                                </div>
+                                          </div>
+
+                                          <div class="contact-item">
+                                                <i class="fab fa-instagram"></i>
+                                                <div>
+                                                      <h4>Instagram</h4>
+                                                      <a href="https://www.instagram.com/gonal_1205/"
+                                                            target="_blank">@gonal_1205</a>
+                                                </div>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+            <div class="container">
+                  <div class="footer-content">
+                        <p>&copy; 2024 Anusha Gonal. All rights reserved.</p>
+                        <p>Thanks for visiting! 🚀</p>
+                  </div>
+            </div>
+      </footer>
+
+      <!-- Smooth Scrolling Script -->
+      <script>
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                  anchor.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        const target = document.querySelector(this.getAttribute('href'));
+                        if (target) {
+                              target.scrollIntoView({
+                                    behavior: 'smooth',
+                                    block: 'start'
+                              });
+                        }
+                  });
+            });
+
+            // Active navigation highlighting
+            window.addEventListener('scroll', () => {
+                  const sections = document.querySelectorAll('section[id]');
+                  const navLinks = document.querySelectorAll('.nav-link');
+
+                  let current = '';
+                  sections.forEach(section => {
+                        const sectionTop = section.offsetTop;
+                        const sectionHeight = section.clientHeight;
+                        if (scrollY >= (sectionTop - 200)) {
+                              current = section.getAttribute('id');
+                        }
+                  });
+
+                  navLinks.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === `#${current}`) {
+                              link.classList.add('active');
+                        }
+                  });
+            });
+
+            // Single Card Carousel functionality
+            let currentSlide = 0;
+            const cards = document.querySelectorAll('.carousel-card-wrapper .project-card');
+            const dots = document.querySelectorAll('.carousel-dots .dot');
+            const prevBtn = document.querySelector('.carousel-btn.prev-btn');
+            const nextBtn = document.querySelector('.carousel-btn.next-btn');
+
+            function updateCarousel() {
+                  cards.forEach((card, idx) => {
+                        card.style.display = idx === currentSlide ? 'block' : 'none';
+                        if (idx === currentSlide) card.scrollIntoView({ block: 'nearest' });
+                  });
+                  dots.forEach((dot, idx) => {
+                        dot.classList.toggle('active', idx === currentSlide);
+                        dot.style.background = idx === currentSlide ? 'linear-gradient(135deg,#6366f1 0%,#8b5cf6 100%)' : '#27272a';
+                        dot.style.transform = idx === currentSlide ? 'scale(1.2)' : 'scale(1)';
+                  });
+            }
+
+            function moveCarousel(direction) {
+                  currentSlide = (currentSlide + direction + cards.length) % cards.length;
+                  updateCarousel();
+            }
+
+            function goToSlide(slideIndex) {
+                  currentSlide = slideIndex;
+                  updateCarousel();
+            }
+
+            // Initialize carousel
+            window.addEventListener('load', updateCarousel);
+      </script>
+      <script>
+            function moveMiniCarousel(direction, btn) {
+                  // Find the closest .project-card and its mini-carousel
+                  var card = btn.closest('.project-card');
+                  var imgs = card.querySelectorAll('.mini-carousel-img');
+                  var dots = card.querySelectorAll('.mini-dot');
+                  var current = Array.from(imgs).findIndex(img => img.style.opacity === '1');
+                  current = (current + direction + imgs.length) % imgs.length;
+                  imgs.forEach((img, i) => { img.style.opacity = (i === current) ? '1' : '0'; });
+                  dots.forEach((dot, i) => {
+                        dot.style.opacity = (i === current) ? '1' : '0.5';
+                        dot.style.transform = (i === current) ? 'scale(1.2)' : 'scale(1)';
+                  });
+            }
+            function goToMiniSlide(idx, dot) {
+                  var card = dot.closest('.project-card');
+                  var imgs = card.querySelectorAll('.mini-carousel-img');
+                  var dots = card.querySelectorAll('.mini-dot');
+                  imgs.forEach((img, i) => { img.style.opacity = (i === idx) ? '1' : '0'; });
+                  dots.forEach((d, i) => {
+                        d.style.opacity = (i === idx) ? '1' : '0.5';
+                        d.style.transform = (i === idx) ? 'scale(1.2)' : 'scale(1)';
+                  });
+            }
+      </script>
 </body>
 
 </html>

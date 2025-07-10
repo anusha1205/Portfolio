@@ -1,9 +1,10 @@
 /* placeholders for PROJECTS */
-.project{
+.project {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
 }
+
 #projects {
       display: flex;
       /* flex-direction: row; */
@@ -16,18 +17,22 @@
       padding: 1.4%;
       width: 30%;
 }
-.button-div{
+
+.button-div {
       text-align: center;
 }
+
 .btn-dark:hover {
       background-color: white;
       color: black;
 }
-.card-title{
+
+.card-title {
       font-family: 'Poppins', sans-serif;
       padding: 2%;
 }
-.projects-div{
+
+.projects-div {
       display: flex;
       justify-content: space-around;
       padding: 3%;
@@ -39,22 +44,26 @@
       border-width: 0.4px;
       border-radius: 20px;
 }
-.projects-sub-div{
+
+.projects-sub-div {
       margin-top: 0%;
       padding: 2%;
       font-size: 1.2rem;
       font-family: 'Raleway', sans-serif;
 
 }
-.images-div{
+
+.images-div {
       display: flex;
       align-items: center;
-      justify-content: space-around;
+      flex-wrap: wrap;
       gap: 5%;
       margin-bottom: 5%;
 }
 
-
+.card-img-top-homekart {
+      width: 25%;
+}
 
 
 
@@ -68,13 +77,15 @@
 .navbar {
       padding: 2%;
 }
-.navbar-brand-div{
+
+.navbar-brand-div {
       display: flex;
       align-items: center;
       gap: 5%;
-      
+
 }
-.brand-logo{
+
+.brand-logo {
       text-decoration: none;
       display: flex;
       /* border-radius: 100%;
@@ -82,16 +93,20 @@
       align-items: center;
       color: rgb(43, 43, 110);
 }
-.brand-logo:hover{
+
+.brand-logo:hover {
       color: rgb(99, 99, 119);
 }
-.navbar-brand{
+
+.navbar-brand {
       color: rgb(4, 4, 41);
       text-decoration: none;
 }
-.navbar-brand:hover{
+
+.navbar-brand:hover {
       color: grey;
 }
+
 .nav-item :hover {
       color: blue;
 }
@@ -101,68 +116,83 @@
       font-family: 'Montserrat', sans-serif;
       font-size: 1.1rem;
 }
+
 /* contact me div things */
-#contact-div{
+#contact-div {
       background-color: rgb(197, 197, 197);
       margin-top: 5%;
       margin-bottom: 150px;
       height: 250px;
-      display:  flex;
+      display: flex;
       justify-content: space-evenly;
       align-items: center;
       flex-direction: row;
       gap: 4rem;
 }
-.visiting{
+
+.visiting {
       display: flex;
       justify-content: space-evenly;
       flex-direction: column;
 }
+
 .email-icon {
       height: 40px;
 }
-.email-icon:hover{
+
+.email-icon:hover {
       transition: 0.2s;
       height: 50px;
 }
-.github-icon, .linkedin-icon{
+
+.github-icon,
+.linkedin-icon {
       height: 40px;
       align-self: center;
 }
-.github-icon:hover , .linkedin-icon:hover{
+
+.github-icon:hover,
+.linkedin-icon:hover {
       transition: 0.25s;
       height: 51px;
 }
-.contact-me-icons{
+
+.contact-me-icons {
       display: flex;
       justify-content: space-evenly;
       gap: 15%;
 }
+
 @media screen and (max-width: 988px) {
-      .profile-pic{
+      .profile-pic {
             width: 400px;
-            
+
       }
-      .about-div-2{
+
+      .about-div-2 {
             display: flex;
             flex-direction: column;
-            
+
       }
-      #contact-div{
+
+      #contact-div {
             display: flex;
             flex-direction: column;
             padding: 2%;
       }
 }
-@media (max-width:452px) and (min-width: 0px){
-      .button-tag-main-div{
+
+@media (max-width:452px) and (min-width: 0px) {
+      .button-tag-main-div {
             flex-direction: column;
       }
-      .navbar-nav{
+
+      .navbar-nav {
             display: flex;
             flex-wrap: wrap;
       }
-      .contact-me-icons{
+
+      .contact-me-icons {
             display: flex;
             justify-content: space-evenly;
             gap: 5%;
